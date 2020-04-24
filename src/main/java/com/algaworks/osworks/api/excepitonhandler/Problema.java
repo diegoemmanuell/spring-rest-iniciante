@@ -1,6 +1,6 @@
 package com.algaworks.osworks.api.excepitonhandler;
 
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -14,7 +14,8 @@ public class Problema {
 
 	
 	private @Getter @Setter Integer status;
-	private @Getter @Setter LocalDateTime dataHora;
+	private @Getter @Setter OffsetDateTime
+	dataHora;
 	private @Getter @Setter String titulo;
 	private @Getter @Setter List<Campo> campos;
 	
